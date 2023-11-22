@@ -2,14 +2,13 @@
   "name": "ts-test",
   "type": "module",
   "scripts": {
-    "tsm": "node --no-warnings --loader tsm",
-    "dev": "pnpm tsm --watch src/index.ts",
-    "run": "pnpm tsm src/index.ts",
+    "start": "node build.js && node build/app.js",
+    "dev": "node build.js -d",
     "typecheck": "tsc --noEmit src/index.ts"
   },
   "dependencies": {
-    "polka": "1.0.0-next.23",
-    "tsm": "^2.3.0"
+    "esbuild": "0.19.7",
+    "polka": "1.0.0-next.23"
   },
   "devDependencies": {
     "@types/node": "20.9.4",
