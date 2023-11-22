@@ -4,7 +4,7 @@ import { ChildProcess, fork } from 'node:child_process';
 
 const OUTFILE = resolve('build/app.js');
 const ENTRY = resolve('src/index.ts');
-const DEV = process.argv.includes('-d');
+const DEV = process.argv.includes('--dev');
 
 /** @type {ChildProcess | undefined} **/
 let proc;

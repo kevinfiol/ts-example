@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "start": "node build.js && node build/app.js",
-    "dev": "node build.js -d",
+    "dev": "node build.js --dev",
     "typecheck": "tsc --noEmit src/index.ts"
   },
   "dependencies": {
