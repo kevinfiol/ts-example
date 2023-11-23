@@ -12,7 +12,7 @@ polka()
   })
   .get('/hello', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify({ message: 'kevin' }));
+    res.end(JSON.stringify({ message: 'world' }));
   })
   .listen(PORT, () => {
     console.log('> Running on localhost:' + PORT);

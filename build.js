@@ -23,8 +23,7 @@ function runApp() {
 const buildOptions = {
   format: 'esm',
   platform: 'node',
-  // bundle: true,
-  // minify: true,
+  minify: !DEV,
   target: 'node18',
   entryPoints: [ENTRY],
   outfile: OUTFILE,
